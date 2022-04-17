@@ -44,6 +44,7 @@ ul{
 
 .itemMenu{
     padding: 15px 30px;
+    cursor: pointer;
 }
 .itemsMenu .active{
     font-weight: bold;
@@ -63,7 +64,7 @@ ul{
 }
 
 .textProfile span{
-    padding: 0 20px;
+    padding: 0 5px 0px 20px;
 }
 
 .toggle{
@@ -89,5 +90,24 @@ ul{
     border-radius: 50%;
     position: absolute;
     right: 1px;
+}
+
+
+/*-- Sidebar --*/
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background: black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar i{
+    font-size: 23px;
+    padding: 10px;
+    margin: 8px;
+    cursor: pointer;
 }
 
