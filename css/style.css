@@ -26,7 +26,7 @@ ul{
 
 .logoNavbar{
     flex: 1;
-    padding-left: 50px;
+    padding-left: 60px;
     font-size: 35px;
     color: rgb(153, 184, 122);
     height: 100%;
@@ -99,9 +99,11 @@ ul{
     height: 100%;
     background: black;
     position: fixed;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 0;
 }
 
 .sidebar i{
@@ -111,3 +113,121 @@ ul{
     cursor: pointer;
 }
 
+
+/*-- --*/
+.container{
+    min-height: calc(100vh - 50px);
+    background: rgb(8, 10, 8);
+    margin-left: 50px;
+}
+
+.sectionIntro{
+    height: 50vh;
+    padding: 50px;
+    font-family: 'Sen', sans-serif;
+}
+
+.imgSiteIntro{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(8, 10, 8)), url('../img/bg.jfif') no-repeat center center/cover;
+}
+
+.titleIntro{
+    font-size: 50px;
+}
+
+.textIntro{
+    font-size: 35px;
+    padding: 40px 0;
+}
+
+.btnIntro{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(107, 146, 28);
+    font-family: 'Sen', sans-serif;
+}
+
+.movieListContainer{
+    padding: 10px 0 20px 20px;
+}
+
+.titleMovieList{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.movieList{
+      display: flex;
+      height: 300px;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+}
+    
+.movieListItem{
+    margin-right: 20px;
+    position: relative;
+}
+.movieListItem:hover .imgListItem{
+    transform: scale(1.2);
+    margin: 0 15px;
+    opacity: 0.1;
+}
+.movieListItem:hover .titleListItem,
+.movieListItem:hover .textListItem,
+.movieListItem:hover .btnListItem{
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+.imgListItem{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+
+.titleListItem{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.textListItem{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    right: 5%;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.btnListItem{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    opacity: 0;
+    padding: 7px 15px;
+    background: none;
+    cursor: pointer;
+}
+
+.movieListRight{
+    color: white;
+    font-size: 120px;
+    position: absolute;
+    right: 1%;
+    top: 30%;
+    opacity: 0.3;
+    cursor: alias;
+}
+
+.imgDarkIntro{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(8, 10, 8)), url('../img/f-2.jpg') no-repeat center center/cover;
+}
