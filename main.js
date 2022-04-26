@@ -21,3 +21,13 @@ arrows.forEach((arrow, i) => {
         }
     });
 });
+
+/* Toggle */
+const ball = document.querySelector(".toggleBall");
+const items = document.querySelectorAll(".navbar, .itemMenu, .textProfile span, .textProfile i, .toggleIcon, .toggleBall, .sidebar, .sidebar i, .container, .movieListContainer h1, .movieListItem");
+
+ball.addEventListener("click", () => {
+    items.forEach(item => {
+        item.classList.toggle("active")
+    })
+})

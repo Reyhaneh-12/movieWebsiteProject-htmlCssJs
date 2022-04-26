@@ -63,7 +63,7 @@ ul {
 }
 
 .textProfile span {
-  padding: 0 5px 0px 20px; color: black !important;
+  padding: 0 5px 0px 20px;
 }
 
 .toggle {
@@ -89,6 +89,7 @@ ul {
   border-radius: 50%;
   position: absolute;
   right: 1px;
+  transition: 1s ease all;
 }
 
 /*-- Sidebar --*/
@@ -236,3 +237,43 @@ ul {
     url("../img/f-2.jpg") no-repeat center center/cover;
 }
 
+
+/*day mood*/
+/*Navbar*/
+.navbar.active{
+    background: white;
+}
+
+.itemMenu.active,
+.textProfile span.active,
+.textProfile i.active,
+.toggleIcon.active{
+color: black !important;
+}
+
+.toggleBall.active{
+    background: white;
+    left: 1px;
+}
+
+/*Sidebar*/
+.sidebar.active{
+    background: white;
+}
+
+.sidebar i.active{
+    color: black; 
+}
+
+/*  */
+.container.active {
+    background: white;
+}
+
+.movieListContainer h1.active{
+    color: black;
+}
+
+.movieListItem.active:hover{
+    background: black;
+}
